@@ -4,7 +4,7 @@ export const getSec = (id) => {
   return async (disptach) => {
     disptach({ type: getsectorsconstants.getsectorsrequest });
     await axios
-      .get(`http://localhost:5000/api/getsctors`)
+      .get(`https://testeess.herokuapp.com/api/getsctors`)
       .then((res) => {
         if (res.status === 200) {
           const { data, message } = res.data;

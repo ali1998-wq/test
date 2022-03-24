@@ -5,7 +5,7 @@ export const Editsec = (data) => {
     const token = localStorage.getItem("LCtoken");
     disptach({ type: editsectorconstants.editsectorrequest });
     await axios
-      .post(`http://localhost:5000/api/updatesector`, {
+      .post(`https://testeess.herokuapp.com/api/updatesector`, {
         ...data,
       })
       .then((res) => {

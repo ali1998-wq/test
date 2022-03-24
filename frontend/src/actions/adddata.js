@@ -5,7 +5,7 @@ export const AddData = (data) => {
     const token = localStorage.getItem("LCtoken");
     disptach({ type: getsectorsconstants.getsectorsrequest });
     await axios
-      .post(`http://localhost:5000/api/user/create`, {
+      .post(`https://testeess.herokuapp.com/api/user/create`, {
         ...data,
       })
       .then((res) => {

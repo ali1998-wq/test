@@ -4,7 +4,7 @@ export const getUs = (id) => {
   return async (disptach) => {
     disptach({ type: getusersconstants.getusersrequest });
     await axios
-      .get(`http://localhost:5000/api/getuser/${id}`)
+      .get(`https://testeess.herokuapp.com/api/getuser/${id}`)
       .then((res) => {
         if (res.status === 200) {
           const { data, message } = res.data;

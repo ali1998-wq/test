@@ -4,7 +4,7 @@ export const getSubSec = (id) => {
   return async (disptach) => {
     disptach({ type: getsubsectorsconstants.getsubsectorsrequest });
     await axios
-      .get(`http://localhost:5000/api/getdubsector`)
+      .get(`https://testeess.herokuapp.com/api/getdubsector`)
       .then((res) => {
         if (res.status === 200) {
           const { data, message } = res.data;
