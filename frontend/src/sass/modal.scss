@@ -61,3 +61,68 @@
     }
   }
 }
+@media (max-width: 767px) {
+  .editmodal__main {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    &__inner {
+      background-color: white;
+      width: 80%;
+      height: auto;
+      border-radius: 20px;
+      padding: 20px;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(98, 193, 147, 1) 52%,
+        rgba(255, 255, 255, 1) 100%
+      ) !important;
+      .back {
+        font-size: 22px;
+        color: red;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .title {
+        font-size: 20px;
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
+      .input__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > input {
+          width: 100%;
+          height: 35px;
+          border-radius: 10px;
+          border: none;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          color: black;
+          font-size: 18px;
+          padding-left: 10px;
+        }
+        > input::placeholder {
+          color: black;
+          font-size: 18px;
+        }
+        > button {
+          width: 130px;
+          height: 30px;
+          margin-top: 40px;
+          border: none;
+          border-radius: 10px;
+          background-color: green;
+          color: white;
+        }
+      }
+    }
+  }
+}
