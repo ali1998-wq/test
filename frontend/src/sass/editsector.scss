@@ -1,0 +1,51 @@
+.editsector__main {
+  background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3)
+    no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inner {
+    width: 80%;
+    height: 80%;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    padding-top: 10px;
+  }
+}
+.tables__div {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  > div:nth-child(1) {
+    width: 48%;
+  }
+  > div:nth-child(2) {
+    width: 48%;
+  }
+}
+.MuiPaper-elevation2 {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(98, 193, 147, 1) 52%,
+    rgba(255, 255, 255, 1) 100%
+  ) !important;
+  border-radius: 13px !important;
+  box-shadow: 0 0 5px #00000030 !important;
+  overflow: hidden;
+  height: 100%;
+}
+.back__arrow {
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
